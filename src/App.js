@@ -1,13 +1,14 @@
 import './App.css';
-import Navbar from './Navbar';
+import Nav from './Nav';
+import About from './About';
 import Junkcontent from './Junkcontent';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Nav />
+      <About />
       <Junkcontent />
-      
     </div>
   );
 }

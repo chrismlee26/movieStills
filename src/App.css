@@ -1,15 +1,6 @@
-:root {
-  font-size: 16px;
-  font-family: Roboto;
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
-}
-
 body {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: #1e1c1c;
   margin: 0;
   padding: 0;
 }
@@ -17,4 +8,19 @@ body {
 main {
   margin-left: 5rem;
   padding: 1rem;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  opacity: 0.1;
+  border: 1px inset white;
+  border-radius: 4px;
+  background: black;
 }

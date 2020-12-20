@@ -1,5 +1,4 @@
 import React from 'react'
-import './Junkcontent.css'
 
 function Junkcontent() {
   return (

@@ -1,0 +1,24 @@
+.about__title {
+  margin-top: 3em;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Permanent Marker", cursive;
+  font-size: 45px;
+  letter-spacing: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.about__image {
+  position: relative;
+  max-width: 850px;
+  display: flex;
+  justify-content: center;
+}
+
+.about__text {
+  display: flex;
+  justify-content: center;
+  font-family: "Helvetica Neue";
+  font-weight: Medium;
+  font-size: 28px;
+}
