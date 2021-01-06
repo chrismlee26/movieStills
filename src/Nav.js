@@ -21,21 +21,32 @@ function Nav() {
   // This is the rendered navbar as JSX
   return (
     <div className={`nav ${show && "nav__black"}`}>
-      <h1
-        className="nav__logo">
-        movieStillsAi
-      </h1>
-      
-      <img
-        className="nav__avatar"
-        src={SearchIcon} 
-        alt=""
-      />
-      <img
-        className="nav__avatar"
-        src={HamburgerIcon} 
-        alt=""
-      />
+      <ul className="navbar__nav">
+        <li className="nav__item">
+          <a href="#">
+            <h1 className="nav__logo">movieStillsAi</h1>
+          </a>
+        </li>
+        <li className="nav__right">
+          <li 
+            className="nav__item has__search">
+              <a href="">
+                <img className="nav__avatar" src={SearchIcon} alt=""/>
+              </a>
+          </li>
+          <li 
+            className="nav__item has__dropdown">
+            <a href="#">
+              <img className="nav__avatar" src={HamburgerIcon} alt=""/>
+            </a>
+            <ul className="dropdown">
+              <li className='dropdown-item'>Browse</li>
+              <li className='dropdown-item'>Gallery</li>
+              <li className='dropdown-item'>Contact</li>
+            </ul>
+          </li>
+        </li>
+      </ul>
     </div>
   )
 }

@@ -9,6 +9,8 @@ function App() {
       <Nav />
       <About />
       <Junkcontent />
+      <Junkcontent />
+      <Junkcontent />
     </div>
   );
 }

@@ -11,7 +11,7 @@ main {
 }
 
 body::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0.35rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -20,7 +20,5 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   opacity: 0.1;
-  border: 1px inset white;
-  border-radius: 4px;
-  background: black;
+  background: grey;
 }
