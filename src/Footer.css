@@ -1,0 +1,11 @@
+.FooterElements {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__text {
+  color: #d3d3d3;
+  font-family: "Helvetica Neue";
+  font-weight: 300;
+}

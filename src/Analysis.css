@@ -1,0 +1,62 @@
+.analysis__title,
+.palette__title {
+  font-family: Georgia;
+  font-size: 45px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+}
+
+.analysis__image {
+  display: block;
+  position: relative;
+  max-width: 75%;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.analysis__container {
+  position: relative;
+}
+
+.movie__info {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  bottom: 8px;
+  left: 14%;
+  font-size: 18px;
+}
+
+.analysis__buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.separator {
+  margin-top: 4em;
+  margin-bottom: 8em;
+  max-width: 50%;
+  color: #f3f3f3;
+  opacity: 35%;
+}
+
+button {
+  background: none !important;
+  border: none;
+  color: white;
+  padding: 0 !important;
+  font-family: Georgia;
+  font-size: 25px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+button:hover {
+  font-size: 28px;
+}

@@ -67,6 +67,7 @@ function Junkcontent() {
           at felis vitae, dapibus sollicitudin sapien.
         </p>
       </main>
+      <hr className="separator"/>
     </div>
   )
 }

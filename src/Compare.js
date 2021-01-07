@@ -1,10 +1,15 @@
 import React from 'react'
+import AlienImage from './images/4-alien.png';
 
 function Analysis() {
   return (
     <div>
-      <h1> main text </h1>
-      <img></img>
+      <h1>photography analysis</h1>
+      <img
+        className="analysis__image"
+        src={AlienImage}
+        alt=""
+      />
       <div>
         <h1> your stats: </h1>
         <h3> 

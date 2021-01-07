@@ -39,6 +39,15 @@
   left: 20px;
   width: 80px;
   object-fit: contain;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:visited,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #000;
 }
 
 ul {
