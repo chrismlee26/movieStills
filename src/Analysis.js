@@ -14,18 +14,22 @@ function Analysis() {
           src={AlienImage}
           alt=""
         />
-        <div className="movie__info">Bottom Left</div>
+        <div className="movie__info">Bottom Left</div> {/* Dynamically changed from info */}
+        <div className="photo__info">Bottom Right</div> {/* Dynamically changed from photography */}
+      </div>
+      <div className="analysis__summary">
+        <p>summary text</p>
       </div>
       <div className="analysis__buttons">
         <button>info</button>
-        <button>rating</button>
-        <button>show all</button>
-        <button>lighting</button>
-        <button>photography</button>
+        <button>overview</button> {/* Pulls TMDB API to make new text */}
+        <button>show all</button> {/* Shows everything all buttons go yellow */}
+        <button>lighting</button> {/* Photo changes to lighting */}
+        <button>photography</button> {/* Photo changes to photography + BR API */}
       </div>
       {/* Palette to be inserted here */}
       <hr className="separator"/>
-      <h1 className="palette__title">color palette:</h1>
+      <h1 className="palette__title">color palette</h1>
       <hr className="separator"/>
     </div>
   )

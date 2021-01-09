@@ -11,7 +11,7 @@ let http = new XMLHttpRequest();
 
 http.onreadystatechange = function() {
 	if(http.readyState == 4 && http.status == 200) {
-		var palette = JSON.parse(http.responseText).result;
+		let palette = JSON.parse(http.responseText).result;
 	}
 }
 

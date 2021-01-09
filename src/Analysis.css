@@ -28,6 +28,20 @@
   font-size: 18px;
   bottom: 8px;
   left: 14%;
+}
+
+.photo__info {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  bottom: 8px;
+  right: 14%;
+}
+
+.analysis__summary {
+  display: flex;
+  justify-content: center;
   font-size: 18px;
 }
 
@@ -59,4 +73,6 @@ button {
 
 button:hover {
   font-size: 28px;
+  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+    0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
 }

@@ -2,6 +2,7 @@ import './App.css';
 import Nav from './Nav';
 import About from './About';
 import Analysis from './Analysis';
+import Compare from './Compare';
 import Junkcontent from './Junkcontent';
 import Footer from './Footer';
 
@@ -11,9 +12,7 @@ function App() {
       <Nav />
       <About />
       <Analysis />
-      <Junkcontent />
-      <Junkcontent />
-      <Junkcontent />
+      <Compare />
       <Footer />
     </div>
   );

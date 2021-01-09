@@ -1,0 +1,146 @@
+[
+  {
+    "info":{
+      "title":"The Tree of Life",
+      "desc":"The story of a family in Waco, Texas in 1956. The eldest son witnesses the loss of innocence and struggles with his parents' conflicting teachings.",
+      "year":"(2011)",
+      "director":"Terrence Malick",
+      "dp":"Emmanuel Lubezki",
+      "metascore":"85"
+    },
+
+    "images":[
+        "1-tol.png"
+    ],
+
+    "photo":{
+        "perspective":"Single Point Perspective",
+        "film":"35mm Film",
+        "lighting":{
+          "key":"",
+          "fill":"",
+          "back":"Natural"
+        }
+    }
+  },
+  {
+    "info":{
+      "title":"2001: A Space Odyssey",
+      "desc":"After discovering a mysterious artifact buried beneath the Lunar surface, mankind sets off on a quest to find its origins with help from intelligent supercomputer H.A.L. 9000.",
+      "year":"(1968)",
+      "director":"Stanley Kubrick",
+      "dp":"Geoffrey Unsworth",
+      "metascore":"84"
+    },
+
+    "images":[
+        "kubrick-2000.png"
+    ],
+
+    "photo":{
+        "perspective":"Single Point Perspective",
+        "film":"70mm Film",
+        "lighting":{
+          "key":"",
+          "fill":"",
+          "back":"Natural"
+        }
+    }
+  },
+  {
+    "info":{
+      "title":"Ran",
+      "desc":"In Medieval Japan, an elderly warlord retires, handing over his empire to his three sons. However, he vastly underestimates how the new-found power will corrupt them and cause them to turn on each other...and him.",
+      "year":"(1985)",
+      "director":"Akira Kurosawa",
+      "dp":"Asakazu Nakai, Takao Saitô, Shôji Ueda",
+      "metascore":"96"
+    },
+
+    "images":[
+        "3-ran.png"
+    ],
+
+    "photo":{
+        "perspective":"Single Point Perspective",
+        "film":"35mm Film",
+        "lighting":{
+          "key":"",
+          "fill":"",
+          "back":"Natural"
+        }
+    }
+  },
+  {
+    "info":{
+      "title":"Alien",
+      "desc":"After a space merchant vessel receives an unknown transmission as a distress call, one of the crew is attacked by a mysterious life form and they soon realize that its life cycle has merely begun.",
+      "year":"(1979)",
+      "director":"Ridley Scott",
+      "dp":"Derek Vanlint",
+      "metascore":"89"
+    },
+
+    "images":[
+        "4-alien.png"
+    ],
+
+    "photo":{
+        "perspective":"Single Point Perspective",
+        "film":"35mm Film",
+        "lighting":{
+          "key":"(1) Hard",
+          "fill":"(2) Back",
+          "back":"(3) Fill at Camera"
+        }
+    }
+  },
+  {
+    "info":{
+      "title":"Stalker",
+      "desc":"A guide leads two men through an area known as the Zone to find a room that grants wishes.",
+      "year":"(1979)",
+      "director":"Andrei Tarkovsky",
+      "dp":"Aleksandr Knyazhinskiy, Georgi Rerberg, Leonid Kalashnikov",
+      "metascore":"82"
+    },
+
+    "images":[
+        "5-stalker.jpg"
+    ],
+
+    "photo":{
+      "perspective":"Single Point Perspective",
+      "film":"35mm Film",
+      "lighting":{
+        "key":"",
+        "fill":"",
+        "back":"Natural"
+      }
+    }
+  },
+  {
+    "info":{
+      "title":"Fury Road",
+      "desc":"In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the aid of a group of female prisoners, a psychotic worshiper, and a drifter named Max.",
+      "year":"(2015)",
+      "director":"George Miller",
+      "dp":"John Seale",
+      "metascore":"90"
+    },
+
+    "images":[
+        "6-fury.png"
+    ],
+
+    "photo":{
+        "perspective":"Single Point, Forced",
+        "film":"2.39:1 Digital",
+        "lighting":{
+          "key":"",
+          "fill":"",
+          "back":"Natural"
+        }
+    }
+  }
+]

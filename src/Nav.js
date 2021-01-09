@@ -28,16 +28,16 @@ function Nav() {
           </a>
         </li>
         <li className="nav__right">
-          <li 
+          {/* <li 
             className="nav__item has__search">
-              <a href="">
-                <img className="nav__avatar" src={SearchIcon} alt=""/>
+              <a href="#">
+                <img className="nav__avatar" src={SearchIcon} alt="Search"/>
               </a>
-          </li>
+          </li> */}
           <li 
             className="nav__item has__dropdown">
             <a href="#">
-              <img className="nav__avatar" src={HamburgerIcon} alt=""/>
+              <img className="nav__avatar" src={HamburgerIcon} alt="Menu"/>
             </a>
             <ul className="dropdown">
               <li className='dropdown-item'>Browse</li>
