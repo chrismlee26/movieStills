@@ -1,6 +1,8 @@
 .FooterElements {
-  padding: 20px;
   display: flex;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: space-between;
 }
 
@@ -8,4 +10,23 @@
   color: #d3d3d3;
   font-family: "Helvetica Neue";
   font-weight: 300;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footer__logo {
+  max-width: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footer__row__left,
+.footer__row__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__row__right {
+  text-align: right;
 }

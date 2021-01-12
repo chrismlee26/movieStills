@@ -1,7 +1,10 @@
 Landing page product proposal
 
-Built with React, CSS, Flask, Axios, Node.js, Firebase \n
-API: TMDB-API \n
-Design: Figma, Photoshop \n
+Built with React, CSS, Node.js, Firebase
 
-'Yarn Start' to begin application
+Design: Figma, Adobe XD
+
+Images courtesy of google image search
+
+$ 'npm install' for dependencies
+$ 'yarn start' to begin application

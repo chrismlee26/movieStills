@@ -18,7 +18,6 @@ function Nav() {
     };
   }, []);
 
-  // This is the rendered navbar as JSX
   return (
     <div className={`nav ${show && "nav__black"}`}>
       <ul className="navbar__nav">
@@ -40,9 +39,9 @@ function Nav() {
               <img className="nav__avatar" src={HamburgerIcon} alt="Menu"/>
             </a>
             <ul className="dropdown">
-              <li className='dropdown-item'>Browse</li>
-              <li className='dropdown-item'>Gallery</li>
-              <li className='dropdown-item'>Contact</li>
+              <li className='dropdown-item' href="#Analysis">Analysis</li>
+              <li className='dropdown-item'>Palette</li>
+              <li className='dropdown-item'>Compare</li>
             </ul>
           </li>
         </li>

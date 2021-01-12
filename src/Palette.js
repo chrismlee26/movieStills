@@ -1,31 +1,23 @@
 import React from 'react'
-
-
-let url = "http://colormind.io/api/";
-let data = {
-	model : "default",
-	input : [[44,43,44],[90,83,82],"N","N","N"]
-}
-
-let http = new XMLHttpRequest();
-
-http.onreadystatechange = function() {
-	if(http.readyState == 4 && http.status == 200) {
-		let palette = JSON.parse(http.responseText).result;
-	}
-}
-
-http.open("POST", url, true);
-http.send(JSON.stringify(data));
-
-
+import './Palette.css';
 
 function Palette() {
   return (
     <div>
-      
+      <div className="palette__buttons">
+        <button className="palette__button1">D5E1F0</button>
+        <button className="palette__button2">A5ACB3</button>
+        <button className="palette__button3">808DA3</button>
+        <button className="palette__button4">504C46</button>
+        <button className="palette__button5">343B3E</button>
+        <button className="palette__button6">0C0A08</button>
+      </div>
+      <h1 className="palette__title">color palette</h1>
+      <hr className="separator"/>
     </div>
-  )
+  );
+  
+  
 }
 
 export default Palette

@@ -1,5 +1,4 @@
-.analysis__title,
-.palette__title {
+.analysis__title {
   font-family: Georgia;
   font-size: 45px;
   font-weight: lighter;
@@ -21,37 +20,64 @@
   position: relative;
 }
 
-.movie__info {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 18px;
-  bottom: 8px;
-  left: 14%;
-}
-
+.movie__info,
 .photo__info {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
+  font-family: "Helvetica Neue";
+  font-weight: 300;
   font-size: 18px;
   bottom: 8px;
+  text-shadow: 0.25px 0.25px 5px black;
+}
+
+.movie__info {
+  left: 14%;
+}
+
+.photo__info {
   right: 14%;
 }
 
 .analysis__summary {
   display: flex;
   justify-content: center;
-  font-size: 18px;
+  font-family: "Helvetica Neue";
+  font-weight: 300;
+  font-size: 20px;
   text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .analysis__buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 3ex;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.analysis__button {
+  background: none !important;
+  border: 2px solid white;
+  color: white;
+  padding: 0 !important;
+  height: 45px;
+  width: 210px;
+  font-family: Georgia;
+  font-size: 25px;
+  font-weight: lighter;
+  cursor: pointer;
+  transition-timing-function: ease-in-out;
+  transition: all 0.25s;
+}
+
+.analysis__button:hover {
+  font-size: 28px;
+  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+    0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
 }
 
 .separator {
@@ -60,50 +86,4 @@
   max-width: 50%;
   color: #f3f3f3;
   opacity: 35%;
-}
-/* 
-button {
-  background: none !important;
-  border: none;
-  color: white;
-  padding: 0 !important;
-  font-family: Georgia;
-  font-size: 25px;
-  font-weight: lighter;
-  cursor: pointer;
-}
-
-button:hover {
-  font-size: 28px;
-  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-    0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-} */
-
-.buttonTrue {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #000;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px black;
-}
-
-.buttonFalse {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: red;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
 }
