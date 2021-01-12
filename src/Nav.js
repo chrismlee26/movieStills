@@ -39,7 +39,7 @@ function Nav() {
               <img className="nav__avatar" src={HamburgerIcon} alt="Menu"/>
             </a>
             <ul className="dropdown">
-              <li className='dropdown-item' href="#Analysis">Analysis</li>
+              <li className='dropdown-item' onClick={}>Analysis</li>
               <li className='dropdown-item'>Palette</li>
               <li className='dropdown-item'>Compare</li>
             </ul>
