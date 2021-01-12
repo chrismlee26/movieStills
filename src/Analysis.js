@@ -1,7 +1,7 @@
 import React from 'react'
 import './Analysis.css';
 import AlienImage from './images/4-alien.png';
-import StalkerImage from './images/5-stalker.jpg';
+import AlienImage2 from './images/4-alien-analysis.png';
 
 class Analysis extends React.Component {
   constructor(props) {
@@ -42,6 +42,13 @@ class Analysis extends React.Component {
     this.setState({photoDisplayed:!this.state.photoDisplayed})
   }
 
+  allClick = () => {
+    this.setState({infoDisplayed:!this.state.infoDisplayed})
+    this.setState({overviewDisplayed:!this.state.overviewDisplayed})
+    this.setState({lightingDisplayed:!this.state.lightingDisplayed})
+    this.setState({photoDisplayed:!this.state.photoDisplayed})
+  }
+
 
   displayMovieInfo = () => {
     if (this.state.infoDisplayed) {
@@ -55,15 +62,15 @@ class Analysis extends React.Component {
     if (this.state.overviewDisplayed) {
       return <p></p>  
     } else {
-      return <div><i>After a space merchant vessel receives an unknown transmission as a distress call, one of the crew is attacked by a  <br />mysterious life form and they soon realize that its life cycle has merely begun.</i></div> 
+      return <div><strong>Alien (1979):</strong> <i>After a space merchant vessel receives an unknown transmission as a distress call, one of the crew is attacked by a  <br />mysterious life form and they soon realize that its life cycle has merely begun.</i></div> 
     }
   }
 
   displayLighting = () => {
     if (this.state.lightingDisplayed) {
-      return StalkerImage
+      return AlienImage2
     } else {
-      return StalkerImage
+      return AlienImage2
     }
   }
 
@@ -82,17 +89,16 @@ class Analysis extends React.Component {
         <div className="analysis__container">
           <img
             className="analysis__image"
-            src={ this.state.lightingDisplayed ? StalkerImage : AlienImage }
+            src={ this.state.lightingDisplayed ? AlienImage2 : AlienImage }
             alt=""
           />
           <div className="movie__info">{ this.state.infoDisplayed ? this.displayMovieInfo : null }</div>
           <div className="photo__info">{ this.state.photoDisplayed ? this.displayPhotoInfo : null }</div>
         </div>
-        
         <div className="analysis__buttons">
           <button onClick={this.infoClick}>movie info</button>
           <button onClick={this.overviewClick}>overview</button>
-
+          <button onClick={this.allClick}>show all</button>
           <button onClick={this.lightingClick}>analyze</button>
           <button onClick={this.photoClick}>photo info</button>
         </div>
