@@ -50,7 +50,7 @@ function Compare() {
           </div>
           <div className="compare__buttons">
             <button>upload</button>
-            <button>analysis</button>
+            <button>analyze</button>
             <button><del>filters</del></button>
           </div>
         </div>

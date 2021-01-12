@@ -13,17 +13,19 @@ class Analysis extends React.Component {
       lightingDisplayed: false,
     }
 
-    this.infoClick = this.infoClick.bind(this)
-    this.displayMovieInfo = this.displayMovieInfo(this)
+    this.infoClick = this.infoClick.bind(this);
+    this.displayMovieInfo = this.displayMovieInfo(this);
 
-    this.overviewClick = this.overviewClick.bind(this)
-    this.displayOverview = this. displayOverview(this)
+    this.overviewClick = this.overviewClick.bind(this);
+    this.displayOverview = this. displayOverview(this);
 
-    this.lightingClick = this.lightingClick.bind(this)
-    this.displayLighting = this. displayLighting(this)
+    this.lightingClick = this.lightingClick.bind(this);
+    this.displayLighting = this. displayLighting(this);
 
-    this.photoClick = this.photoClick.bind(this)
-    this.displayPhotoInfo = this. displayPhotoInfo(this)
+    this.photoClick = this.photoClick.bind(this);
+    this.displayPhotoInfo = this. displayPhotoInfo(this);
+
+    this.handleClick = this.handleClick.bind(this);
   }
 
   infoClick = () => {
@@ -47,6 +49,10 @@ class Analysis extends React.Component {
     this.setState({overviewDisplayed:!this.state.overviewDisplayed})
     this.setState({lightingDisplayed:!this.state.lightingDisplayed})
     this.setState({photoDisplayed:!this.state.photoDisplayed})
+  }
+
+  handleClick(){
+    this.setState({button:!this.state.button})
   }
 
 
@@ -75,7 +81,7 @@ class Analysis extends React.Component {
   }
 
   displayPhotoInfo = () => {
-    if (this.state.overviewDisplayed) {
+    if (this.state.photoInfoDisplayed) {
       return <p></p>  
     } else {
       return <div><u>Cinematography:</u> <br /> Single Point Perspective <br /> 35mm Film <br /> 3 points of lighting <br /> -key (1) hard <br /> -back at (2) <br /> -fill at camera (3)</div> 
@@ -96,11 +102,11 @@ class Analysis extends React.Component {
           <div className="photo__info">{ this.state.photoDisplayed ? this.displayPhotoInfo : null }</div>
         </div>
         <div className="analysis__buttons">
-          <button onClick={this.infoClick}>movie info</button>
-          <button onClick={this.overviewClick}>overview</button>
-          <button onClick={this.allClick}>show all</button>
-          <button onClick={this.lightingClick}>analyze</button>
-          <button onClick={this.photoClick}>photo info</button>
+          <button className={this.state.button ? "buttonTrue": "buttonFalse"}  onClick={this.infoClick}>movie info</button>
+          <button className={this.state.button ? "buttonTrue": "buttonFalse"}  onClick={this.overviewClick}>overview</button>
+          <button className={this.state.button ? "buttonTrue": "buttonFalse"}  onClick={this.allClick}>show all</button>
+          <button className={this.state.button ? "buttonTrue": "buttonFalse"}  onClick={this.lightingClick}>analyze</button>
+          <button className={this.state.button ? "buttonTrue": "buttonFalse"}  onClick={this.photoClick}>photo info</button>
         </div>
         <br />
         <div className="analysis__summary">{ this.state.overviewDisplayed ? this.displayOverview : null }</div>
