@@ -10,30 +10,68 @@ class Analysis extends React.Component {
     this.state = { 
       infoDisplayed: false,
       overviewDisplayed: false,
+      lightingDisplayed: false,
     }
 
     this.infoClick = this.infoClick.bind(this)
     this.displayMovieInfo = this.displayMovieInfo(this)
 
+    this.overviewClick = this.overviewClick.bind(this)
+    this.displayOverview = this. displayOverview(this)
 
+    this.lightingClick = this.lightingClick.bind(this)
+    this.displayLighting = this. displayLighting(this)
+
+    this.photoClick = this.photoClick.bind(this)
+    this.displayPhotoInfo = this. displayPhotoInfo(this)
   }
 
   infoClick = () => {
-    console.log('we are here')
-    console.log(this.state.infoDisplayed)
     this.setState({infoDisplayed:!this.state.infoDisplayed})
-    console.log(this.state.infoDisplayed)
-    
   }
 
+  overviewClick = () => {
+    this.setState({overviewDisplayed:!this.state.overviewDisplayed})
+  }
+
+  lightingClick = () => {
+    this.setState({lightingDisplayed:!this.state.lightingDisplayed})
+  }
+
+  photoClick = () => {
+    this.setState({photoDisplayed:!this.state.photoDisplayed})
+  }
+
+
   displayMovieInfo = () => {
-    console.log('displayMovieInfo')
     if (this.state.infoDisplayed) {
-      console.log('if', this.state.infoDisplayed)
-      return (<p>'movie data info'</p>)   
+      return <p></p>  
     } else {
-      console.log('else', this.state.infoDisplayed)
-      return <div>hello</div> 
+      return <div><u>Movie Info:</u> <br /> Alien (1979) <br /> Dir: Ridley Scott <br /> DP: Derek Vanlint <br /> IMDB: 9/10</div> 
+    }
+  }
+
+  displayOverview = () => {
+    if (this.state.overviewDisplayed) {
+      return <p></p>  
+    } else {
+      return <div><i>After a space merchant vessel receives an unknown transmission as a distress call, one of the crew is attacked by a  <br />mysterious life form and they soon realize that its life cycle has merely begun.</i></div> 
+    }
+  }
+
+  displayLighting = () => {
+    if (this.state.lightingDisplayed) {
+      return StalkerImage
+    } else {
+      return StalkerImage
+    }
+  }
+
+  displayPhotoInfo = () => {
+    if (this.state.overviewDisplayed) {
+      return <p></p>  
+    } else {
+      return <div><u>Cinematography:</u> <br /> Single Point Perspective <br /> 35mm Film <br /> 3 points of lighting <br /> -key (1) hard <br /> -back at (2) <br /> -fill at camera (3)</div> 
     }
   }
 
@@ -44,20 +82,22 @@ class Analysis extends React.Component {
         <div className="analysis__container">
           <img
             className="analysis__image"
-            src={AlienImage}
+            src={ this.state.lightingDisplayed ? StalkerImage : AlienImage }
             alt=""
           />
           <div className="movie__info">{ this.state.infoDisplayed ? this.displayMovieInfo : null }</div>
-          <div className="photo__info">1234567</div>
+          <div className="photo__info">{ this.state.photoDisplayed ? this.displayPhotoInfo : null }</div>
         </div>
-        <div className="analysis__summary">1234567</div>
+        
         <div className="analysis__buttons">
-          <button onClick={this.infoClick}>info</button>
-          <button>overview</button>
-          <button>show all</button>
-          <button>lighting</button>
-          <button>photography</button>
+          <button onClick={this.infoClick}>movie info</button>
+          <button onClick={this.overviewClick}>overview</button>
+
+          <button onClick={this.lightingClick}>analyze</button>
+          <button onClick={this.photoClick}>photo info</button>
         </div>
+        <br />
+        <div className="analysis__summary">{ this.state.overviewDisplayed ? this.displayOverview : null }</div>
         <hr className="separator"/>
         <h1 className="palette__title">color palette</h1>
         <hr className="separator"/>
