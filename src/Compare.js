@@ -26,19 +26,20 @@ class Compare extends React.Component {
 
   uploadClick = () => {
     this.setState({statsDisplayed:!this.state.statsDisplayed})
-    this.setState({thumbOneDisplayed:!this.state.thumbOneDisplayed})    
+    this.setState({thumbOneDisplayed:!this.state.thumbOneDisplayed})
+    this.setState({thumbTwoDisplayed:!this.state.thumbTwoDisplayed})    
   }
 
   compareClick = () => {
     this.setState({compareDisplayed:!this.state.compareDisplayed})
-    this.setState({thumbTwoDisplayed:!this.state.thumbTwoDisplayed})    
+    // this.setState({thumbTwoDisplayed:!this.state.thumbTwoDisplayed})    
   }
 
   displayStats = () => {
     if (this.state.statsDisplayed) {
       return <p></p>  
     } else {
-      return <div><u><strong>your stats:</strong></u><br /><small>one-point perspective<br />35mm lens<br />aperture: f/4.0<br />ISO: 1600<br />exposure: 1/125<br />color: bw<br />subject: person<br />category: street<br />lighting: natural <br />most similar: <u>Andrei Tarkovski's "Stalker"</u></small></div>
+      return <div><u><strong>your photo:</strong></u><br /><small>one-point perspective<br />35mm lens<br />aperture: f/4.0<br />ISO: 1600<br />exposure: 1/125<br />color: bw<br />subject: person<br />category: street<br />lighting: natural <br />most similar: <u>Andrei Tarkovski's "Stalker"</u></small></div>
     }
   }
 

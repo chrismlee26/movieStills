@@ -25,6 +25,12 @@
   text-decoration: none;
 }
 
+.nav__right {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+
 .nav__item,
 .nav__item a {
   text-decoration: none;
@@ -72,7 +78,7 @@ ul {
   align-items: left;
   flex-direction: column;
   justify-content: space-between;
-  height: 5rem;
+  height: 10rem;
   margin-top: 2rem;
   padding: 0.5rem;
 
