@@ -62,11 +62,11 @@ class Compare extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="compare__title">learn from the greats. compare your photos with your favorite films:</h1>
+        <h1 className="compare__title">learn from the greats.<br /> compare your photos with your favorite films:</h1>
         <div className="compare__buttons">
-          <button className="compare__button" onClick={this.uploadClick}>1 upload</button>
-          <button className="compare__button" onClick={this.compareClick}>2 compare</button>
-          <button className="compare__button"><del>3 filter</del></button>
+          <button className="compare__button" onClick={this.uploadClick}><small>1</small> upload</button>
+          <button className="compare__button" onClick={this.compareClick}><small>2</small> compare</button>
+          <button className="compare__button"><del><small>3</small> filter</del></button>
         </div>
         <div className="bottom__content">
           <img

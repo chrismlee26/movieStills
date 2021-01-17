@@ -1,7 +1,7 @@
 .analysis__title {
   font-family: Georgia;
-  font-size: 45px;
   font-weight: lighter;
+  font-size: 2.8em;
   display: flex;
   justify-content: center;
 }
@@ -9,9 +9,9 @@
 .analysis__image {
   display: block;
   position: relative;
-  max-width: 75%;
+  max-width: 90%;
   margin-top: 1em;
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -27,34 +27,37 @@
   margin-right: auto;
   font-family: "Helvetica Neue";
   font-weight: 300;
-  font-size: 18px;
-  bottom: 8px;
+  font-size: 1.2rem;
+  bottom: 1rem;
   text-shadow: 0.25px 0.25px 5px black;
 }
 
 .movie__info {
-  left: 14%;
+  left: 7%;
 }
 
 .photo__info {
-  right: 14%;
+  right: 7%;
 }
 
 .analysis__summary {
   display: flex;
   justify-content: center;
+  text-align: center;
   font-family: "Helvetica Neue";
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .analysis__buttons {
   display: flex;
   justify-content: space-between;
-  margin-top: 3ex;
+  margin-top: 3rem;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -64,10 +67,10 @@
   border: 2px solid white;
   color: white;
   padding: 0 !important;
-  height: 45px;
-  width: 210px;
+  height: 2rem;
+  width: 14rem;
   font-family: Georgia;
-  font-size: 25px;
+  font-size: 1.4rem;
   font-weight: lighter;
   cursor: pointer;
   transition-timing-function: ease-in-out;
@@ -75,14 +78,14 @@
 }
 
 .analysis__button:hover {
-  font-size: 28px;
+  font-size: 1.5rem;
   text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
     0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
 }
 
 .separator {
-  margin-top: 4em;
-  margin-bottom: 8em;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
   max-width: 50%;
   color: #f3f3f3;
   opacity: 35%;

@@ -54,7 +54,7 @@ class Analysis extends React.Component {
     if (this.state.infoDisplayed) {
       return <p></p>  
     } else {
-      return <div><u>Movie Info:</u> <br /> <strong>Alien</strong> (1979) <br /> Dir: Ridley Scott <br /> DP: Derek Vanlint <br /> Horror, Sci-Fi <br /> 1h 57min<br /> IMDB: 9/10</div> 
+      return <div><u>Movie Info:</u> <br /> <strong>Alien</strong> (1979) <br /> <small>Dir:</small> Ridley Scott <br /> <small>DP:</small> Derek Vanlint <br /> Horror, Sci-Fi <br /> 1h 57min<br /> IMDB: 9/10</div> 
     }
   }
 
@@ -85,7 +85,7 @@ class Analysis extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="analysis__title">photography analysis:</h1>
+        <h1 className="analysis__title">photo analyzer:</h1>
         <div className="analysis__container">
           <img
             className="analysis__image"
@@ -104,7 +104,6 @@ class Analysis extends React.Component {
         </div>
         <br />
         <div className="analysis__summary">{ this.state.overviewDisplayed ? this.displayOverview : null }</div>
-        {/* <hr className="separator"/> */}
       </div>
     );
   }

@@ -13,7 +13,7 @@ function About() {
         alt=""
       />
       <p className="about__text">
-        movieStillsAI provides photography analysis through a image recognition neural network containing the greatest works of cinematographic art. Use our curated data for your own design + photography projects or just hang out, discover awesome movies, enjoy & explore.
+      movieStillsAi provides photography analytics through an image recognition neural network containing the greatest works of cinematographic art. Use our curated data for your own design + photography projects or just hang out, discover awesome movies, enjoy & explore.
       </p>
       <hr className="separator"/>
     </div>

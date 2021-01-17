@@ -41,13 +41,13 @@ function Nav() {
               <img className="nav__avatar" src={HamburgerIcon} alt="Menu"/>
             </a>
             <ul className="dropdown">
-              <li className='dropdown-item'>Analysis</li>
-              <li className='dropdown-item'>Palette</li>
-              <li className='dropdown-item'>Compare</li>
+              <li className="dropdown_item_a">Analysis</li>
+              <li className="dropdown_item_b">Palette</li>
+              <li className="dropdown_item_a">Compare</li>
               <br />
-              <li className='dropdown-item'>Gallery</li>
-              <li className='dropdown-item'>Fullscreen</li>
-              <li className='dropdown-item'>Contact</li>
+              <li className="dropdown_item_b">Gallery</li>
+              <li className="dropdown_item_a">Fullscreen</li>
+              <li className="dropdown_item_b">Contact</li>
             </ul>
           </li>
         </li>

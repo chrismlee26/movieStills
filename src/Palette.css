@@ -1,6 +1,6 @@
 .palette__title {
   font-family: Georgia;
-  font-size: 45px;
+  font-size: 2.8rem;
   font-weight: lighter;
   display: flex;
   justify-content: center;
@@ -9,7 +9,7 @@
 .palette__buttons {
   display: flex;
   justify-content: space-between;
-  margin-top: 3ex;
+  margin-top: 2%;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -21,15 +21,12 @@
 .palette__button5,
 .palette__button6 {
   border: 2px solid white;
-  padding-top: 130px;
-  height: 170px;
-  width: 174px;
+  padding-top: 8%;
+  height: 13.5vh;
+  width: 9.5vw;
   font-family: "Helvetica Neue";
   font-weight: 300;
-  font-size: 14px;
-  /* font-family: Georgia;
-  font-size: 25px;
-  font-weight: lighter; */
+  font-size: 0.7rem;
   cursor: pointer;
 
   transition-timing-function: ease-in-out;
@@ -43,7 +40,7 @@
 .palette__button5:hover,
 .palette__button6:hover {
   color: white;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .palette__button1 {

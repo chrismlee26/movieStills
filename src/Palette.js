@@ -12,6 +12,7 @@ function Palette() {
         <button className="palette__button5">343B3E</button>
         <button className="palette__button6">0C0A08</button>
       </div>
+      {/* Add functionality for click to copy text */}
       <h1 className="palette__title">color palette</h1>
       <hr className="separator"/>
     </div>

@@ -28,4 +28,4 @@ function Palette() {
   )
 }
 
-export default Palette
+export default PaletteList
